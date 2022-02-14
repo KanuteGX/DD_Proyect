@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   width="8.5in"
+   height="11in"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+   viewBox="0 0 8.5 11"
+   version="1.1"
+   id="svg33"><metadata
+   id="metadata37"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+ <defs
+   id="defs15">
+  <font
+   id="FontID0"
+   font-variant="normal"
+   style="fill-rule:nonzero"
+   font-style="normal"
+   font-weight="400">
+	<font-face
+   font-family="BrowalliaUPC"
+   id="font-face2">
+	</font-face>
+   <missing-glyph
+   id="missing-glyph6"><path
+     d="M0 0z"
+     id="path4" /></missing-glyph>
+   <glyph
+   unicode="D"
+   horiz-adv-x="471"
+   id="glyph10"><path
+     d="M50.3336 0l0 467.333 161.166 0c30.5,0 57.8339,-2.16669 81.6667,-6.33301 23.9999,-4.33338 47.0004,-15.1668 68.8337,-32.5004 22.0003,-17.4999 39.9999,-42.3336 53.8331,-74.6669 13.8333,-32.4996 20.6667,-71.6664 20.6667,-117.5 0,-70.3336 -16.6667,-127.334 -50.0002,-170.834 -33.3327,-43.6665 -89.3333,-65.4997 -167.666,-65.4997l-168.5 0zm61.9994 55.1667l99.5 0c41.1671,0 72.5002,5.99961 94.3335,17.9996 21.8332,12.167 38.3336,32.167 49.8332,60.334 11.3339,28.1662 17.0001,62.8333 17.0001,103.833 0,28.6667 -2.83348,53.6661 -8.4997,75.1667 -5.66696,21.4998 -14.1667,39.4994 -25.6669,54.1665 -11.3332,14.6664 -25.8332,25.8332 -43.5001,33.6661 -17.4999,7.83365 -45.8332,11.8336 -84.8329,11.8336l-98.1671 0 0 -357z"
+     id="path8" /></glyph>
+  </font>
+  <style
+   type="text/css"
+   id="style13">
+   <![CDATA[
+    @font-face { font-family:"BrowalliaUPC";src:url("#FontID0") format(svg)}
+    .fil1 {fill:#901E78}
+    .fil0 {fill:#FFF500}
+    .fil2 {fill:white}
+    .fnt0 {font-weight:normal;font-size:5.34943;font-family:'BrowalliaUPC'}
+   ]]>
+  </style>
+ </defs>
+ <g
+   id="Capa_x0020_1">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <circle
+   class="fil0"
+   cx="4.39282"
+   cy="5.17012"
+   r="4.05187"
+   id="circle18"
+   style="fill:#dfcf20;fill-opacity:1" />
+  <path
+   class="fil1"
+   d="M2.93574 8.95171c-0.604642,-0.233201 -1.13924,-0.607236 -1.56378,-1.08185l0.170736 -0.669512 0.473209 -1.8556 0.473205 1.8556 0.446626 1.75137z"
+   id="path20"
+   style="fill:#ae0df2;fill-opacity:1" />
+  <path
+   class="fil1"
+   d="M4.39282 1.11825c2.23741,0 4.05187,1.81446 4.05187,4.05187 0,1.13531 -0.467394,2.16152 -1.21996,2.89723 -2.26637,-0.000649606 -4.10413,-1.83878 -4.10413,-4.10531 0,-1.10269 0.435083,-2.10389 1.14278,-2.84153 0.043,-0.00135039 0.0861063,-0.00226378 0.129437,-0.00226378z"
+   id="path22"
+   style="fill:#aa0df2;fill-opacity:1" />
+  <path
+   class="fil1"
+   d="M2.00486 3.96181c0.1035,0 0.187441,0.0893543 0.187441,0.199531 0,0.110185 -0.0839409,0.199535 -0.187441,0.199535 -0.103504,0 -0.187441,-0.0893504 -0.187441,-0.199535 0,-0.110177 0.083937,-0.199531 0.187441,-0.199531zm3.93701e-006 -0.566811c-0.263311,0 -0.476846,0.372441 -0.476846,0.831701 0,0.053937 0.00298425,0.106654 0.00861417,0.157732 -0.127079,0.151268 -0.206154,0.363472 -0.206154,0.598433 0,0.292157 0.122248,0.549134 0.307043,0.697492 0.0874764,-0.184142 0.219559,-0.301461 0.367343,-0.301461 0.147776,0 0.27987,0.117315 0.367339,0.301461 0.184799,-0.148362 0.307043,-0.405331 0.307043,-0.697492 0,-0.234961 -0.0790787,-0.447169 -0.206154,-0.598437 0.00562598,-0.0510787 0.00861024,-0.103791 0.00861024,-0.157728 0,-0.45926 -0.213531,-0.831701 -0.476839,-0.831701z"
+   id="path24"
+   style="fill:#ae0df2;fill-opacity:1" />
+  
+  
+  
+ </g>
+</svg>
