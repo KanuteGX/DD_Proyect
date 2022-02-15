@@ -192,7 +192,8 @@ body main {
 
 /*Elementos de header - LOGO y Menu acitve*/
 .elements-header {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 100px;
   position: absolute;
@@ -202,11 +203,15 @@ body main {
 }
 
 .elements-header--container {
-  display: inline-block;
-  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+
+  max-width: 1300px;
   height: 100px;
   position: relative;
-  top: 100px;
+  top: 130px;
 }
 
 .elements-header__scroll-bar {
@@ -223,8 +228,8 @@ body main {
 
 .logo {
   position: absolute;
-  top: 35px;
-  left: 5%;
+
+  left: 0;
   /* Medidas a cambiar en las distintas resoluciones  */
 
   --medidaLogo: 80px;
@@ -236,10 +241,6 @@ body main {
   height: var(--medidaLogo);
   width: var(--medidaLogo);
   z-index: 1000;
-}
-
-.logo__scroll-bar {
-  top: 10px;
 }
 
 .logo--figure {
@@ -358,14 +359,9 @@ body main {
 
 .menu-active {
   height: 20px;
-  top: 60px;
-  left: 88%;
+
   overflow: hidden;
   cursor: pointer;
-}
-
-.menu-active__scroll-bar {
-  top: 40px;
 }
 
 .menu-active::after {
@@ -386,6 +382,7 @@ body main {
   overflow-y: auto;
   transition: right 0.4s ease;
   border-left: 2px solid var(--colorSecundario);
+  z-index: 1400;
 }
 
 .menu__start {
@@ -409,6 +406,7 @@ body main {
   height: 100vh;
   background-color: rgba(13, 13, 13, 0.4);
   cursor: pointer;
+  z-index: 1200;
 }
 
 .menu-desactive::after,
@@ -428,7 +426,7 @@ body main {
 
 .list {
   position: absolute;
-  top: 150px;
+  top: 125px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -439,7 +437,7 @@ body main {
 }
 
 .list--item {
-  height: 120px;
+  height: 100px;
   border-bottom: 2px solid var(--colorSecundario);
   display: flex;
   align-items: center;
@@ -451,16 +449,12 @@ body main {
 
 .list--item a {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding-left: 15px;
   color: var(--white);
 }
 
 @media (min-width: 1300px) {
-  .logo {
-    left: 10%;
-  }
-
   .menu-active,
   .menu-desactive {
     display: none;
@@ -468,28 +462,26 @@ body main {
 
   .menu {
     height: 100px;
-    width: 100vw;
+    width: 60%;
     background-color: transparent;
     position: absolute;
-    top: 35px;
+    /* producto del desplzamiento del formato mobile */
     right: 0;
-    z-index: 100;
-    overflow: hidden;
     border-left: none;
     transition: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav {
+    width: 100%;
   }
 
   .list {
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 700px;
-    top: -20px;
-    left: 45%;
-  }
-
-  .list__scroll-bar {
-    top: -42px;
   }
 
   .list--item {
@@ -532,14 +524,13 @@ body main {
 
 @media (min-width: 1600px) {
   .logo {
-    left: 15%;
     --medidaLogo: 100px;
     --triLados: 25px;
     --triPunta: 75px;
     --sombraBackground: -2.5px 2.5px 3.75px -5px var(--black),
       -4.375px 4.375px var(--colorSecundario2);
   }
-
+  /* evento scroll */
   .logo__scroll-bar {
     --medidaLogo: 80px;
     --triLados: 20px;
@@ -572,10 +563,6 @@ body main {
 }
 
 @media (min-width: 1900px) {
-  .logo {
-    left: 20%;
-  }
-
   .continer-title--opacity {
     height: 700px;
     width: 1400px;
@@ -1151,6 +1138,7 @@ body main {
 
 .logo__footer {
   top: -25px;
+  z-index: 0;
 }
 
 .logo__footer .logo--name .logo--name-one,

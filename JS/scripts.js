@@ -89,17 +89,15 @@ const scrollBar = () => {
     header.style.transition = ' all 0.4s ease';
     header.classList.add('elements-header__scroll-bar');
     headerContainer.classList.add('elements-header--container__scroll-bar');
-    menuActive.classList.add('menu-active__scroll-bar');
+
     logo.classList.add('logo__scroll-bar');
-    list.classList.add('list__scroll-bar');
   }
   if (scrollTop < 200) {
     header.style.transition = 'none';
     header.classList.remove('elements-header__scroll-bar');
     headerContainer.classList.remove('elements-header--container__scroll-bar');
-    menuActive.classList.remove('menu-active__scroll-bar');
+
     logo.classList.remove('logo__scroll-bar');
-    list.classList.remove('list__scroll-bar');
   }
 };
 
