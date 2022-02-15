@@ -1155,7 +1155,8 @@ body main {
 
 .logo__footer .logo--name .logo--name-one,
 .logo__footer .logo--name .logo--name-two,
-.contact {
+.contact,
+.contact--item a i {
   font-style: normal;
 }
 
@@ -1169,14 +1170,16 @@ body main {
   justify-content: space-evenly;
   font-size: 1.3rem;
 }
+
 .contact--item a {
+  font-size: 2rem;
   color: var(--white);
   text-decoration: none;
 }
 
 .container-autor {
   position: absolute;
-
+  font-weight: bold;
   top: 180px;
   width: 100%;
   display: flex;
