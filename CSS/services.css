@@ -23,6 +23,17 @@
   transition: left 1s ease;
 }
 
+/* para nav anclaje */
+#video,
+#web,
+#design,
+#book,
+#marketing {
+  width: 1px;
+  position: absolute;
+  top: -200px;
+}
+
 .card-service:nth-of-type(n + 2) {
   left: -105%;
 }
