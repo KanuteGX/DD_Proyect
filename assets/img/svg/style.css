@@ -948,8 +948,8 @@ body main {
   height: 400px;
   width: 75%;
   position: relative;
-  left: -50%;
-  transition: left 2s ease;
+  left: -100%;
+  transition: left 1s ease;
 }
 
 .background-card2__scroll .background-card2__size {
@@ -979,13 +979,13 @@ body main {
   margin-bottom: 0;
   height: 75%;
   width: 75%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .card2--button {
   position: absolute;
-  top: 75%;
-  font-size: 1.5rem;
+  top: 70%;
+  font-size: 1.8rem;
   padding: 6px 12px 6px 12px;
   border: 2px solid var(--colorPrimario);
   background-color: var(--white);
@@ -1021,7 +1021,7 @@ body main {
 
 @media (min-width: 1300px) {
   .card2--button:hover {
-    top: 70%;
+    top: 68%;
   }
 }
 

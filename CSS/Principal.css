@@ -1,0 +1,25 @@
+/* Principal */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: hsl(0, 0%, 5%);
+  --white: hsl(0, 0%, 95%);
+  --colorPrimario: hsl(282, 90%, 50%);
+  --colorPrimario2: hsl(290, 90%, 50%);
+  --colorSecundario: hsl(55, 75%, 50%);
+  --colorSecundario2: hsl(48, 65%, 50%);
+  --colorSecundarioText: hsl(55, 90%, 70%);
+  --shadowGeneral: 0 0 5px -3px var(--black);
+  background-color: var(--white);
+  color: var(--black);
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}

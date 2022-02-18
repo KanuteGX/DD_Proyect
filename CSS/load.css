@@ -1,0 +1,45 @@
+/* Pantalla de carga */
+.load {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--colorPrimario);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity 0.8s ease;
+}
+
+.load__end {
+  opacity: 0;
+}
+
+.load--icon,
+.load--icon::after {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.load--icon {
+  display: inline-block;
+  background-color: var(--colorSecundario);
+  /* Investigar */
+  animation: spinner 2s linear infinite;
+}
+/* Investigar */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load--icon::after {
+  content: '';
+  top: -15%;
+  left: 33%;
+  background-color: var(--colorPrimario);
+}

@@ -24,8 +24,6 @@ const menu = document.getElementById('menu');
 
 const menuDesacBgr = document.getElementById('menu-desactive-background');
 
-// const body = document.querySelector('body');
-
 menuActive.addEventListener('click', (e) => {
   menu.classList.add('menu__start');
   menuDesacBgr.classList.add('menu-desactive-background');
@@ -129,7 +127,8 @@ const elementOpacityScroll = () => {
   let cardTop = containerCardTwo.offsetTop;
   let viewportHeight = document.firstElementChild.clientHeight;
 
-  if (scrollTop > cardTop - viewportHeight / 1.3)
+  if (scrollTop > cardTop - viewportHeight / 1.3) {
     bgrCardTwo.classList.add('background-card2__scroll');
-  cardTwo.classList.add('card2__scroll');
+    cardTwo.classList.add('card2__scroll');
+  }
 };
