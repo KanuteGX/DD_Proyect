@@ -1,3 +1,7 @@
+.banner--img {
+  object-position: 70% 1%;
+}
+
 .contacts--address,
 .contacts--card {
   display: flex;
