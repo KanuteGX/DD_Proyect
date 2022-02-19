@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- favicons support -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../assets/favicons/apple-icon-57x57.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../assets/favicons/apple-icon-60x60.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../assets/favicons/apple-icon-72x72.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/favicons/apple-icon-76x76.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../assets/favicons/apple-icon-114x114.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../assets/favicons/apple-icon-120x120.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../assets/favicons/apple-icon-144x144.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../assets/favicons/apple-icon-152x152.png?"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicons/apple-icon-180x180.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../assets/favicons/android-icon-192x192.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicons/favicon-32x32.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/favicons/favicon-96x96.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicons/favicon-16x16.png?"
+    />
+    <link rel="manifest" href="../assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png?" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- CDN font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../CSS/Normalize.css" />
+    <link rel="stylesheet" href="../CSS/Principal.css" />
+    <link rel="stylesheet" href="../CSS/load.css" />
+    <link rel="stylesheet" href="../CSS/logo.css" />
+    <link rel="stylesheet" href="../CSS/menu.css" />
+    <link rel="stylesheet" href="../CSS/banner.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/contacts.css" />
+    <title>Dalhia Design</title>
+  </head>
+  <body>
+    <!-- Pantalla de carga -->
+    <div class="load" id="load">
+      <div class="load--icon"></div>
+    </div>
+
+    <header class="elements-header" id="header">
+      <div class="elements-header--container" id="header-container">
+        <!-- LOGO -->
+        <a title="Logo" href="../index.html" class="logo" id="logo">
+          <div class="logo--figure"></div>
+          <div class="logo--background"></div>
+          <h1 class="logo--name">
+            <strong class="logo--name-one">Dalhia</strong><br /><strong
+              class="logo--name-two"
+              >Design</strong
+            >
+          </h1>
+        </a>
+        <!-- Menu -->
+
+        <div class="menu" id="menu">
+          <div class="menu-desactive" id="menu-desactive"></div>
+          <nav role="navigation" class="nav">
+            <ul class="list" id="list">
+              <li class="list--item">
+                <a title="Conócenos" href="../Conócenos/Conócenos.html">Conócenos</a>
+              </li>
+              <li class="list--item">
+                <a title="Servicios" href="../Servicios/Servicios.html">Servicios</a>
+              </li>
+              <li class="list--item">
+                <a
+                  title="Trabajos Hechos"
+                  href="../Trabajos_Hechos/Trabajos_Hechos.html"
+                  >Trabajos</a
+                >
+              </li>
+              <li class="list--item">
+                <!-- sobre si mismo -->
+                <a title="Contáctanos" href="">Contáctanos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-active" id="menu-active"></div>
+      </div>
+    </header>
+    <main role="main">
+      <!-- banner -->
+      <div class="banner">
+        <div class="continer-title--opacity"></div>
+        <picture class="banner--picture">
+          <source
+            srcset="../assets/img/webp/contact_menu/contact_1920.webp"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="../assets/img/webp/contact_menu/contact_1280.webp"
+            media="(min-width:350px)"
+          />
+          <source srcset="../assets/img/webp/contact_menu/contact_640.webp" />
+          <img
+            class="banner--img"
+            src="../assets/img/jpg/menu/contact/contact_1280.jpg"
+            alt="persona llamando por telefono contactando a alguien en una oficina con su laptop y una taza de cafe"
+          />
+        </picture>
+
+        <h2 class="banner--title">Contáctanos</h2>
+      </div>
+
+      <!-- contactos -->
+
+      <section class="contacts">
+        <h3 class="title-articles">
+          Lorem ipsum, dolor sit amet consectefsdfdsfur adipisicing elit.
+        </h3>
+        <address class="contacts--address">
+          <div class="contacts--card">
+            <ul class="contacts--list">
+              <li class="contacts--list-item">Correo:</li>
+              <li class="contacts--list-item">
+                <a title="Enviar Correo" href="mailto:pimentel2002d@gmail.com"
+                  >pimentel2002d@gmail.com</a
+                >
+              </li>
+              <li class="contacts--list-item">Whatsapp:</li>
+              <li class="contacts--list-item">
+                <a title="Whatsapp" href="tel:+584124963347">+58 4124963347</a>
+              </li>
+            </ul>
+            <!-- horas de contacto -->
+            <p class="contacts--paragraph">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quae
+              architecto quo ratione, tempore at. Dicta, ut et sapiente magni neque
+              error iusto fuga optio a. Ullam debitis laborum tempora.
+            </p>
+            <!-- contactar con el desarrollador -->
+            <p class="contacts--paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, magni
+              modi soluta non fugiat, repellendus obcaecati reprehenderit esse beatae
+              debitis suscipit hic laudantium doloremque ratione consectetur animi
+              veniam optio? Laudantium.
+            </p>
+          </div>
+          <div class="contacts--card">
+            <ul class="contacts--list">
+              <li class="contacts--list-item">Facebook:</li>
+              <li class="contacts--list-item">
+                <a title="Facebook" href="">Daniel Pimentel</a>
+              </li>
+              <li class="contacts--list-item">Instagram</li>
+              <li class="contacts--list-item">
+                <a title="Instagram" href="">@KanuteGX</a>
+              </li>
+              <li class="contacts--list-item">Youtube:</li>
+              <li class="contacts--list-item">
+                <a
+                  title="Youtube"
+                  href="https://www.youtube.com/watch?v=kEaFgKNs0ME&list=PLHUHafzTpUztRACDwbekZVJV1GYiYzo_2&index=60"
+                  >Canal de fulanito</a
+                >
+              </li>
+            </ul>
+            <!-- Clausula de servicio -->
+            <p class="contacts--paragraph contacts--paragraph__block2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem fugiat distinctio earum repellat accusamus adipisci
+              vero. Assumenda voluptate eius aliquam ab nemo dolore tempore sed
+              itaque nisi, exercitationem in doloremque.
+            </p>
+          </div>
+        </address>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container-contact">
+        <address class="contact">
+          <a title="Logo" href="../index.html" class="logo logo__footer">
+            <div class="logo--figure"></div>
+            <div class="logo--background"></div>
+            <h2 class="logo--name">
+              <em class="logo--name-one">Dalhia</em><br /><em class="logo--name-two"
+                >Design</em
+              >
+            </h2>
+          </a>
+          <ul class="contact--list">
+            <li class="contact--item">
+              <a title="Facebook" href=""
+                ><i class="fa-brands fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="contact--item">
+              <a title="Whatsapp" href=""
+                ><i class="fa-brands fa-whatsapp-square"></i
+              ></a>
+            </li>
+            <li class="contact--item">
+              <a title="Instagram" href=""
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+            </li>
+            <li class="contact--item">
+              <a title="Enviar Correo" href=""
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="container-autor">
+            <p class="autor">Daniel Pimentel - 2022</p>
+          </div>
+        </address>
+      </div>
+    </footer>
+    <script src="../JS/load.js"></script>
+    <script src="../JS/scroll_bar.js"></script>
+    <script src="../JS/menu_responsive.js"></script>
+    <script src="../JS/contacts.js"></script>
+  </body>
+</html>

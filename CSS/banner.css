@@ -16,12 +16,12 @@
 
 .continer-title--opacity {
   position: absolute;
-  height: 300px;
-  width: 700px;
+  height: 400px;
+  width: 800px;
 
   background-image: radial-gradient(
     ellipse 70% 65%,
-    hsl(282, 90%, 50%, 0.25) 30%,
+    hsl(282, 90%, 50%, 0.2) 30%,
     transparent 70%
   );
 }
@@ -54,7 +54,13 @@
 
 @media (min-width: 1300px) {
   .banner--title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+  }
+
+  .continer-title--opacity {
+    position: absolute;
+    height: 500px;
+    width: 1000px;
   }
 }
 

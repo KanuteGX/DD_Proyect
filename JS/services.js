@@ -17,8 +17,14 @@ const elementAnimationScroll = () => {
   containerServicesArray.forEach((card, index) => {
     if (index != 0) {
       let cardTop = card.offsetTop;
-      if (scrollTop > cardTop - viewportHeight / 1.3)
-        card.classList.add('card-service__scroll');
+      // Numero PAR
+      if (index % 2 == 0) {
+        if (scrollTop > cardTop - viewportHeight / 1.3)
+          card.classList.add('card-service__scroll');
+      } else {
+        if (scrollTop > cardTop - viewportHeight / 1.3)
+          card.children[1].classList.add('card-service__scroll');
+      }
     }
   });
 };

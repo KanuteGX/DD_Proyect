@@ -1,0 +1,138 @@
+/* card frases atrapantes */
+
+.wrapper-superior {
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  perspective: 30em;
+  display: grid;
+  transform-style: preserve-3d;
+}
+
+.card {
+  grid-area: 1 / 1;
+  height: 150px;
+  width: 300px;
+  transform: translateX(10px) rotateY(20deg) rotateX(5deg);
+  background: hsla(55, 75%, 50%, 0.85);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  color: var(--colorPrimario);
+  text-transform: uppercase;
+
+  font-weight: 900;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card--title {
+  all: initial;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.card--paragrahp {
+  all: initial;
+  font-family: sans-serif;
+  position: absolute;
+  top: 45%;
+  font-size: 1rem;
+  color: var(--colorPrimario);
+}
+
+.card .enclosed {
+  background: var(--colorPrimario);
+  line-height: 1;
+  color: var(--colorSecundario);
+  display: inline-block;
+  transform: translateX(10px);
+  transform-origin: right center;
+}
+
+.wrapper:before {
+  --bw: 9px;
+  grid-area: 1 / 1;
+  content: '';
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  background: transparent;
+  transform: translateX(-30px) rotateY(-20deg) rotateX(10deg) scale(1.03);
+  pointer-events: none;
+  border: var(--bw) solid var(--colorPrimario);
+  box-sizing: content-box;
+}
+
+@media (min-width: 600px) {
+  .wrapper-superior {
+    height: 800px;
+  }
+
+  .card {
+    height: 200px;
+    width: 400px;
+  }
+
+  .card--title {
+    font-size: 1.7rem;
+  }
+  .card--paragrahp {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper-superior {
+    height: 1100px;
+  }
+  .card {
+    height: 250px;
+    width: 500px;
+  }
+  .card--title {
+    font-size: 1.8rem;
+  }
+  .card--paragrahp {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card--title {
+    font-size: 2rem;
+  }
+  .wrapper-superior {
+    height: 600px;
+    flex-direction: row;
+  }
+
+  .wrapper:hover > article,
+  .wrapper:hover:before {
+    transform: none;
+  }
+
+  .wrapper > article,
+  .wrapper:before {
+    will-change: transform;
+    transition: 0.3s transform cubic-bezier(0.25, 0.46, 0.45, 1);
+  }
+}

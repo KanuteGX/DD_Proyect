@@ -83,7 +83,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png?" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- CDN flaticon -->
+    <!-- CDN font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -122,13 +122,13 @@
           </h1>
         </a>
         <!-- Menu -->
-        <div id="menu-desactive-background"></div>
+
         <div class="menu" id="menu">
           <div class="menu-desactive" id="menu-desactive"></div>
           <nav role="navigation" class="nav">
             <ul class="list" id="list">
               <li class="list--item">
-                <a title="Conócenos" href="">Conócenos</a>
+                <a title="Conócenos" href="../Conócenos/Conócenos.html">Conócenos</a>
               </li>
               <li class="list--item">
                 <!-- sobre si mismo -->
@@ -142,7 +142,9 @@
                 >
               </li>
               <li class="list--item">
-                <a title="Contáctanos" href="">Contáctanos</a>
+                <a title="Contáctanos" href="../Contactos/Contactos.html"
+                  >Contáctanos</a
+                >
               </li>
             </ul>
           </nav>
@@ -153,12 +155,21 @@
     <main role="main">
       <!-- banner -->
       <div class="banner">
+        <div class="continer-title--opacity"></div>
         <picture class="banner--picture">
-          <source srcset="../assets/img/webp/Equipo_mesa_1280.webp" />
+          <source
+            srcset="../assets/img/webp/services_menu/services_1920.webp"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="../assets/img/webp/services_menu/services_1280.webp"
+            media="(min-width:350px)"
+          />
+          <source srcset="../assets/img/webp/services_menu/services_640.webp" />
           <img
             class="banner--img"
-            src="../assets/img/jpg/Equipo_mesa_1280.jpg"
-            alt=""
+            src="../assets/img/jpg/menu/services/services_1280.jpg"
+            alt="grupo de personas en una oficina trabajando en distintos servicios digitales que ofrecen a las empresas"
           />
         </picture>
 
@@ -171,39 +182,41 @@
         </h3>
         <div class="card-service">
           <div id="video"></div>
-          <picture class="card-service--picture">
-            <source
-              media="(min-width: 1200px)"
-              srcset="../assets/img/webp/video_servicios/video_1920.webp"
-            />
-            <source
-              media="(min-width: 350px)"
-              srcset="../assets/img/webp/video_servicios/video_1280.webp"
-            />
-            <source srcset="assets/img/webp/video_servicios/video_640.webp" />
-            <img
-              class="card-service--img"
-              src="../assets/img/jpg/servicios/video/video_1280.jpg"
-              alt="utilizando programa de edicion de video "
-            />
-          </picture>
-          <article class="card-service--article">
-            <h4 class="card-service--title">Edición de Video</h4>
-            <p class="card-service--paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas adipisci
-              alias est unde explicabo neque aut eius eaque facere sequi maxime,
-              minima exercitationem recusandae modi? Sint laborum soluta eveniet
-              nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-              saepe quisquam quaerat sapiente qui vitae sit fuga, quo maxime, harum
-              dolorum illum repellat dolorem asperiores soluta at. Eveniet, aperiam
-              ipsum.
-            </p>
-          </article>
-          <a
-            title="Ver Trabajos"
-            class="card-service--buttom"
-            href="../Trabajos_Hechos/Trabajos_Hechos.html#video"
-          ></a>
+          <div class="card-service--wrapper">
+            <picture class="card-service--picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="../assets/img/webp/video_servicios/video_1920.webp"
+              />
+              <source
+                media="(min-width: 350px)"
+                srcset="../assets/img/webp/video_servicios/video_1280.webp"
+              />
+              <source srcset="assets/img/webp/video_servicios/video_640.webp" />
+              <img
+                class="card-service--img"
+                src="../assets/img/jpg/servicios/video/video_1280.jpg"
+                alt="utilizando programa de edicion de video "
+              />
+            </picture>
+            <article class="card-service--article">
+              <h4 class="card-service--title">Edición de Video</h4>
+              <p class="card-service--paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                adipisci alias est unde explicabo neque aut eius eaque facere sequi
+                maxime, minima exercitationem recusandae modi? Sint laborum soluta
+                eveniet nemo. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Eius saepe quisquam quaerat sapiente qui vitae sit fuga, quo
+                maxime, harum dolorum illum repellat dolorem asperiores soluta at.
+                Eveniet, aperiam ipsum.
+              </p>
+            </article>
+            <a
+              title="Ver Trabajos"
+              class="card-service--buttom"
+              href="../Trabajos_Hechos/Trabajos_Hechos.html#video"
+            ></a>
+          </div>
         </div>
 
         <div class="card-service">
@@ -244,39 +257,41 @@
         </div>
         <div class="card-service">
           <div id="design"></div>
-          <picture class="card-service--picture">
-            <source
-              media="(min-width: 1200px)"
-              srcset="../assets/img/webp/design_servicios/design_1920.webp"
-            />
-            <source
-              media="(min-width: 350px)"
-              srcset="../assets/img/webp/design_servicios/design_1280.webp"
-            />
-            <source srcset="../assets/img/webp/design_servicios/design_640.webp" />
-            <img
-              class="card-service--img"
-              src="../assets/img/jpg/servicios/design/design_1280.jpg"
-              alt="buscando fondos (background) y tarjetas de diseño en una tablet"
-            />
-          </picture>
-          <article class="card-service--article">
-            <h4 class="card-service--title">Diseño Gráfico</h4>
-            <p class="card-service--paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas adipisci
-              alias est unde explicabo neque aut eius eaque facere sequi maxime,
-              minima exercitationem recusandae modi? Sint laborum soluta eveniet
-              nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt minus unde quae. Impedit quasi voluptatem, doloribus, eum
-              saepe nostrum ipsa dolorum repellendus repellat id magnam? Amet est
-              enim dolores eligendi!
-            </p>
-          </article>
-          <a
-            title="Ver Trabajos"
-            class="card-service--buttom"
-            href="../Trabajos_Hechos/Trabajos_Hechos.html#design"
-          ></a>
+          <div class="card-service--wrapper">
+            <picture class="card-service--picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="../assets/img/webp/design_servicios/design_1920.webp"
+              />
+              <source
+                media="(min-width: 350px)"
+                srcset="../assets/img/webp/design_servicios/design_1280.webp"
+              />
+              <source srcset="../assets/img/webp/design_servicios/design_640.webp" />
+              <img
+                class="card-service--img"
+                src="../assets/img/jpg/servicios/design/design_1280.jpg"
+                alt="buscando fondos (background) y tarjetas de diseño en una tablet"
+              />
+            </picture>
+            <article class="card-service--article">
+              <h4 class="card-service--title">Diseño Gráfico</h4>
+              <p class="card-service--paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                adipisci alias est unde explicabo neque aut eius eaque facere sequi
+                maxime, minima exercitationem recusandae modi? Sint laborum soluta
+                eveniet nemo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Incidunt minus unde quae. Impedit quasi voluptatem, doloribus,
+                eum saepe nostrum ipsa dolorum repellendus repellat id magnam? Amet
+                est enim dolores eligendi!
+              </p>
+            </article>
+            <a
+              title="Ver Trabajos"
+              class="card-service--buttom"
+              href="../Trabajos_Hechos/Trabajos_Hechos.html#design"
+            ></a>
+          </div>
         </div>
         <div class="card-service">
           <div id="book"></div>
@@ -316,41 +331,43 @@
         </div>
         <div class="card-service">
           <div id="marketing"></div>
-          <picture class="card-service--picture">
-            <source
-              media="(min-width: 1200px)"
-              srcset="../assets/img/webp/marketing_servicios/marketing_1920.webp"
-            />
-            <source
-              media="(min-width: 350px)"
-              srcset="../assets/img/webp/marketing_servicios/marketing_1280.webp"
-            />
-            <source
-              srcset="../assets/img/webp/marketing_servicios/marketing_640.webp"
-            />
-            <img
-              class="card-service--img"
-              src="../assets/img/jpg/servicios/marketing/marketing_1280.jpg"
-              alt="analizando estadisticas de mercado (marketing) en una laptop"
-            />
-          </picture>
-          <article class="card-service--article">
-            <h4 class="card-service--title">Marketing Digital</h4>
-            <p class="card-service--paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas adipisci
-              alias est unde explicabo neque aut eius eaque facere sequi maxime,
-              minima exercitationem recusandae modi? Sint laborum soluta eveniet
-              nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt minus unde quae. Impedit quasi voluptatem, doloribus, eum
-              saepe nostrum ipsa dolorum repellendus repellat id magnam? Amet est
-              enim dolores eligendi!
-            </p>
-          </article>
-          <a
-            title="Ver Trabajos"
-            class="card-service--buttom"
-            href="../Trabajos_Hechos/Trabajos_Hechos.html#marketing"
-          ></a>
+          <div class="card-service--wrapper">
+            <picture class="card-service--picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="../assets/img/webp/marketing_servicios/marketing_1920.webp"
+              />
+              <source
+                media="(min-width: 350px)"
+                srcset="../assets/img/webp/marketing_servicios/marketing_1280.webp"
+              />
+              <source
+                srcset="../assets/img/webp/marketing_servicios/marketing_640.webp"
+              />
+              <img
+                class="card-service--img"
+                src="../assets/img/jpg/servicios/marketing/marketing_1280.jpg"
+                alt="analizando estadisticas de mercado (marketing) en una laptop"
+              />
+            </picture>
+            <article class="card-service--article">
+              <h4 class="card-service--title">Marketing Digital</h4>
+              <p class="card-service--paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                adipisci alias est unde explicabo neque aut eius eaque facere sequi
+                maxime, minima exercitationem recusandae modi? Sint laborum soluta
+                eveniet nemo. Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Incidunt minus unde quae. Impedit quasi voluptatem, doloribus,
+                eum saepe nostrum ipsa dolorum repellendus repellat id magnam? Amet
+                est enim dolores eligendi!
+              </p>
+            </article>
+            <a
+              title="Ver Trabajos"
+              class="card-service--buttom"
+              href="../Trabajos_Hechos/Trabajos_Hechos.html#marketing"
+            ></a>
+          </div>
         </div>
       </section>
     </main>

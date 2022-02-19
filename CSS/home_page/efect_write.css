@@ -1,0 +1,83 @@
+/* title Efecto Escritura Libreria*/
+
+.container-title {
+  position: absolute;
+  width: 100%;
+  top: 38vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+
+  z-index: 100;
+}
+
+.continer-title--opacity {
+  position: absolute;
+  height: 500px;
+  width: 1000px;
+  top: -180px;
+  background-image: radial-gradient(
+    ellipse 70% 65%,
+    hsl(282, 90%, 50%, 0.25) 30%,
+    transparent 70%
+  );
+}
+
+.title {
+  /* Agregar z-index al titulo */
+  position: relative;
+
+  display: inline-block;
+}
+
+.title--part-one {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  height: 60px;
+}
+
+.paragrahp-title--services {
+  font-size: 3rem;
+  font-style: normal;
+  color: var(--colorSecundarioText);
+}
+
+.typed-cursor {
+  /* cursor librery efect write*/
+  font-size: 3rem;
+}
+
+@media (min-width: 1300px) {
+  .continer-title--opacity {
+    top: -160px;
+  }
+  .title--part-one {
+    font-size: 5rem;
+    height: 100px;
+  }
+
+  .paragrahp-title--services,
+  .typed-cursor {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .continer-title--opacity {
+    height: 700px;
+    width: 1400px;
+    top: -200px;
+  }
+
+  .title--part-one {
+    font-size: 6rem;
+    height: 150px;
+  }
+
+  .paragrahp-title--services,
+  .typed-cursor {
+    font-size: 6rem;
+  }
+}
